@@ -1,0 +1,97 @@
+
+
+
+div{
+
+    display: grid;
+    grid-template-columns:15% 70% 15% ;
+    grid-template-rows: 200px 100px 500px 100px ;
+    grid-template-areas: "nada header nada2" "nopublie nav publi2" "nopublie serv publi2" "pie pie pie";
+    }
+
+   
+    @media screen and ( max-width: 1550px){
+        
+        div{ grid-template-columns: 100%;
+            grid-template-rows: 200px 100px 800px  600px 600px 100px;
+            grid-template-areas: "header" "nav" "serv" "nopublie" "publi2" "pie";
+          
+    
+        }
+    }
+
+
+
+
+
+ 
+
+
+
+    
+    header{ grid-area: header; text-align: center ;
+        animation-name: logo ;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    
+    }
+     
+    @keyframes logo {
+
+        100%{ transform: rotate(360deg);}
+    }
+
+
+  
+
+
+    nav{grid-area: nav ; text-align: center;  }
+     nav:hover{ transform: translate(10px,10px)}
+
+  aside{grid-area: publi2;text-align: center;}
+
+ .nopublie {grid-area: nopublie;text-align: center;}
+
+
+    main{grid-area: serv ; text-align: center;}
+
+    footer {grid-area:pie;text-align: center;
+    
+        background-image: linear-gradient(rgb(242, 158, 79),rgb(194, 87, 5));
+
+    }
+    footer:hover{ transform: scale(1.5,1.5);
+    
+                transition: 2s;}
+  
+  
+
+
+h2{
+    color: rgb(209, 58, 24) ; font-size: 50px;font-family: 'Fredoka One', cursive;text-align: center;
+}
+fieldset{ font-size: 15px;font-family: 'Fredoka One', cursive;text-align: center}
+
+
+legend{
+    color: rgb(209, 58, 24); font-size: 40px; ;font-family: 'Fredoka One', cursive;
+}
+
+table{display: inline-table;}
+
+th{font-size: 15px;font-weight: bold;font-family: 'Fredoka One', cursive}
+
+.class{text-align: justify;font: 50px;font-family: 'Fredoka One', cursive;}
+
+p{font: 20px;font-family: 'Fredoka One', cursive; text-align: center; }
+
+
+li{display:inline-flex; flex-wrap: wrap;list-style-type: none;font-weight: bold;  font-family: 'Fredoka One', cursive; font-size: 20px;width: 140px;text-align: center;}
+
+
+body{ background-color: rgb(192, 126, 4);}
+
+#principal{display:flex; justify-content: space-between;align-items: center; height: 800px;width: 1000px;}
+
+
+
