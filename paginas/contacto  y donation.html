@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/proyecto2pricipal.css">
+
 
     <title>CONTACTO</title>
-   
-    <link rel="stylesheet" href="../CSS/proyecto2pricipal.css">
+    
 
 </head>
 
-<div>
+
 
 <body>
 
@@ -27,19 +31,13 @@
 
     </header>
 
-    <nav>
-        <!--info donation imagen ayuday contacto-->
-       <ul>
-           
-          <li><a href="info.html">INFO</a></li>
-          <li><a href="imagenes.html">GALERIA</a></li>
-          <li><a href="contacto  y donation.html">DONACIONES</a></li>
-          <li><a href="adopcion.html">ADOPCION</a></li>
-          <li><a href="../index.html">INICIO</a></li>
-       </ul>
-    
-    
-    </nav>
+    <nav class="nav justify-content-center flex-column flex-sm-row">
+        <a class="flex-sm-fill text-sm-center nav-link link-success" href="../index.html">INICIO</a>
+        <a class="flex-sm-fill text-sm-center nav-link link-success" href="imagenes.html">GALERIA</a>
+        <a class="flex-sm-fill text-sm-center nav-link link-success" href="contacto  y donation.html">DONACIONES</a>
+        <a class="flex-sm-fill text-sm-center nav-link link-success " href="adopcion.html" >ADOPCION</a>
+        <a class="flex-sm-fill text-sm-center nav-link link-success " href="info.html" >INFO</a>
+      </nav>
 
     <aside>
         <img src="multimedia/publi 1.png" alt="">
@@ -50,44 +48,42 @@
     </aside>
 
     <main>
-    <form action="" method="">
+         <legend>GRACIAS POR AYUDARNOS</legend>
 
-        <fieldset>
-            <legend>ENVIANOS TU COMENTARIO</legend>
+         <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="@example.com">
+          </div>
+            <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Nombre</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Apellido</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+             <div class="col-auto">
+                <label class="visually-hidden" for="autoSizingSelect"></label>
+                <select class="form-select" id="autoSizingSelect">
+                  <option selected>Donaciones</option>
+                  <option value="1">Mercado Pago</option>
+                  <option value="2">Visa</option>
+                  <option value="3">Mastercard</option>
+                </select>
+              </div>
 
-
-        NOMBRE <input type="text">
-        <br>
-        APELLIDO <input type="text">
-        <br>
-    
-        DOMICILIO <input type="texte">
-
-
-        <br>
-        COMENTARIO:
-        <textarea name="" id="" cols="120" rows="10"></textarea>
-
-        <br>
-
-        <input type="submit" value="enviar">
-        <input type="reset" value="reset">
-     
-
-       </fieldset>
-
+  
+           <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
        
+           </div>
+             <div class="col-12">
+              <button type="submit" class="btn btn-primary">ENVIAR</button>
+            </div>
 
-        <fieldset>
-            <legend>DONACION</legend>
-            <select name="" id="">
-                <option value="">Visa</option>
-                <option value="">Mastercard</option>
-                <option value="">Mercadopago</option>
-            </select> 
-        
-        </fieldset>
-
+           
     </main>
         
 <footer>
@@ -99,6 +95,10 @@
 </footer>
 
 
-</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

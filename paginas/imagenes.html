@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/proyecto2pricipal.css">
 
     <title>MEDIA</title>
 
-    <link rel="stylesheet" href="../CSS/proyecto2pricipal.css">
+  
 
    
 
@@ -18,8 +22,8 @@
 </head>
 
 
-<div>
-<body>
+
+<body class="paginaImagenes">
 
     <header>
         <img src="multimedia/logo 2.png" alt="">
@@ -29,20 +33,13 @@
     
     </header>
 
-    <nav>
-        <!--info donation imagen ayuday contacto-->
-       <ul>
-           
-        <li><a href="info.html">INFO</a></li>
-        <li><a href="imagenes.html">GALERIA</a></li>
-        <li><a href="contacto  y donation.html">DONACIONES</a></li>
-        <li><a href="adopcion.html">ADOPCION</a> </li>
-        <li><a href="../index.html">INICIO</a></li>
-        
-       </ul>
-
-
-    </nav>
+    <nav class="nav justify-content-center flex-column flex-sm-row">
+        <a class="flex-sm-fill text-sm-center nav-link link-success" href="../index.html">INICIO</a>
+        <a class="flex-sm-fill text-sm-center nav-link link-success" href="imagenes.html">GALERIA</a>
+        <a class="flex-sm-fill text-sm-center nav-link link-success" href="contacto  y donation.html">DONACIONES</a>
+        <a class="flex-sm-fill text-sm-center nav-link link-success " href="adopcion.html" >ADOPCION</a>
+        <a class="flex-sm-fill text-sm-center nav-link link-success " href="info.html" >INFO</a>
+      </nav>
 
     <aside>
         <img src="multimedia/publi 1.png" alt="">
@@ -53,8 +50,41 @@
     </aside>
 
     <main>
-    <img src="multimedia/descarga (1).jfif" alt="">
-    <img src="multimedia/descarga.jfif" alt="">
+     
+        <div class="card-group">
+            <div class="card">
+              <img src="multimedia/ASTON.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">ASTON</h5>
+                <p class="card-text">Gran porte fisico y muy inteligente, cruza de pitbull, muy cariñoso.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Se puede adoptar o apadrinar</small>
+              </div>
+            </div>
+            <div class="card">
+              <img src="multimedia/sabu.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">SABU</h5>
+                <p class="card-text">Mestizo, muy activo, necesita un lugar con mucho espacio, es muy alegre y cariñoso</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Se puede adoptar o apadrinar</small>
+              </div>
+            </div>
+            <div class="card">
+              <img src="multimedia/kinder.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">KINDER</h5>
+                <p class="card-text">Un Jack Russell hermoso, muy inteligente y tranquilo , perfecto para ambientes pequeños</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Se puede adoptar o apadrinar</small>
+              </div>
+            </div>
+          </div>
+
+       
 
     </main>
 
@@ -66,6 +96,10 @@
 
     </footer>
 
-</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
