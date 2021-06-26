@@ -47,6 +47,8 @@ body{
     main{grid-area: serv ; text-align: center;}
 
     footer {grid-area:pie;text-align: center;}
+
+    label{font: 10px;font-family: 'Fredoka One', cursive;color: rgb(104, 82, 48); }
   
 legend{
     color: rgb(10, 65, 6); font-size: 40px; ;font-family: 'Fredoka One', cursive;
