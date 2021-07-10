@@ -1,82 +1,74 @@
-
-body{ background-color: rgb(208, 186, 159);}
-
 body {
-
+    background-color: burlywood;
     display: grid;
-    grid-template-columns:15% 70% 15% ;
-    grid-template-rows: 200px 100px 700px 100px ;
-    grid-template-areas: "nada logo nada2" "nopublie logo publi2" "serv serv serv " "pie pie pie";
-    }   
-        
-   
-     
-    @keyframes logo {
- 
-        100%{ transform: rotate(360deg);}
-    }
-
-    @media screen and ( max-width: 1700px){
-        
-        body{ grid-template-columns: 100%;
-            grid-template-rows: 500px  1000px  100px;
-            grid-template-areas: "logo" "serv"  "pie";
-          
-    
-        }
-    }
-
-
-    @media screen and ( max-width: 800px){
-        
-        body{ grid-template-columns: 100%;
-            grid-template-rows: 500px  2400px  100px;
-            grid-template-areas: "logo" "serv"  "pie";
-          
-    
-        }
-    }
-
-
- #logo{ grid-area: logo; text-align: center ;
-        animation-name: logo ;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-    
-    }
-
-    
-
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 200px 100px 700px 100px;
+    grid-template-areas: "nada logo nada2" "nopublie logo publi2" "serv serv serv " "pie pie pie"; }
   
-   
-header{grid-area: logo;font-family: 'Fredoka One', cursive; font-size: 30px}
-
-
-main{grid-area: serv;  
-    
-    grid-template-columns: subgrid;
-
-
-}
-
-   
-
-    footer {grid-area:pie;text-align: center;border-top: 10px;}
-
-    label{font: 10px;font-family: 'Fredoka One', cursive;color: rgb(104, 82, 48); }
+  @keyframes logo {
+    100% {
+      transform: rotate(360deg); } }
   
-legend{
-    color: rgb(10, 65, 6); font-size: 40px; ;font-family: 'Fredoka One', cursive; text-align: center;
-}
-
-table{font-size: 15px;font-weight: bold;font-family: 'Fredoka One', cursive;}
-
-.class{text-align: justify;font: 50px;font-family: 'Fredoka One', cursive;}
-
-p{font: 20px;font-family: 'Fredoka One', cursive; text-align: center; color: rgb(104, 82, 48); }
-
-
-li{display:inline-flex; flex-wrap: wrap;list-style-type: none;font-weight: bold;  font-family: 'Fredoka One', cursive; font-size: 20px;width: 140px;text-align: center;}
-
-
+  @media screen and (max-width: 1700px) {
+    body {
+      grid-template-columns: 100%;
+      grid-template-rows: 500px  1000px  100px;
+      grid-template-areas: "logo" "serv"  "pie"; } }
+  
+  #logo {
+    grid-area: logo;
+    text-align: center;
+    animation-name: logo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; }
+  
+  header {
+    grid-area: logo;
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px; }
+  
+  main {
+    grid-area: serv; }
+  
+  label {
+    font: 10px;
+    font-family: 'Fredoka One', cursive;
+    color: #685230; }
+  
+  legend {
+    color: #0a4106;
+    font-size: 40px;
+    font-family: 'Fredoka One', cursive;
+    text-align: center; }
+  
+  table {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Fredoka One', cursive; }
+  
+  .class {
+    text-align: justify;
+    font: 50px;
+    font-family: 'Fredoka One', cursive; }
+  
+  p {
+    font: 20px;
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    color: #685230; }
+  
+  li {
+    display: inline-flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    font-weight: bold;
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    width: 140px;
+    text-align: center; }
+  
+  footer {
+    grid-area: pie;
+    text-align: center;
+    border-top: 10px; }
 
