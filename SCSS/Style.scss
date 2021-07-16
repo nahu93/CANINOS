@@ -1,0 +1,65 @@
+body { background-color: burlywood;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 200px 100px 750px 100px;
+    grid-template-areas: "nada logo nada2" "nopublie logo publi2" "serv serv serv " "pie pie pie"; }
+
+
+
+    header{grid-area: logo;font-family: 'Fredoka One', cursive; font-size: 30px;
+
+    #logo{ grid-area: logo; text-align: center ;
+        animation-name: logo ;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    
+    }
+    @keyframes logo {
+ 
+        100%{ transform: rotate(360deg);}
+    }
+
+    ul {
+        li{display:inline-flex; flex-wrap: wrap;list-style-type: none;font-weight: bold;  font-family: 'Fredoka One', cursive; font-size: 20px;width: 140px;text-align: center;
+
+        }
+    }
+
+    }
+
+
+    main{grid-area: serv;  ;}
+
+// Adopcion //    
+
+    table{font-size: 15px;font-weight: bold;font-family: 'Fredoka One', cursive;}
+
+// Comun a todos las secciones //
+    label{font: 10px;font-family: 'Fredoka One', cursive;color: rgb(104, 82, 48); }
+    p{font: 20px;font-family: 'Fredoka One', cursive; text-align: center; color: rgb(104, 82, 48); text-align: justify; }
+    footer {grid-area:pie;text-align: center;border-top: 10px;}
+
+    
+    @mixin titulos ($Colortitulo,$tamanioTitulo) {
+        color: $Colortitulo;
+        font-size: $tamanioTitulo;
+        font-family: 'Fredoka One', cursive;
+        text-align: center;
+    }
+    
+     legend{
+        @include titulos(rgb(10, 65, 6), 40px )     
+    
+        }
+
+ @media screen and ( max-width: 1200px){
+        
+            body{ grid-template-columns: 100%;
+                grid-template-rows: 500px  2350px  100px;
+                grid-template-areas: "logo" "serv"  "pie";
+                
+              
+        
+            }
+        }
+        
